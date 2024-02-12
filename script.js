@@ -39,3 +39,20 @@ function calculateRectangleArea() {
   document.getElementById("rectangle-length").value = "";
   document.getElementById("rectangle-width").value = "";
 }
+//-------------------------------------------------------------------------
+function calculateParallelogramArea() {
+  const parallelogramBaseValue =
+    document.getElementById("parallelogram-base").value;
+  const baseFloat = parseFloat(parallelogramBaseValue);
+  //-------------------------
+  const parallelogramHeightValue = document.getElementById(
+    "parallelogram-height"
+  ).value;
+  const heightFloat = parseFloat(parallelogramHeightValue);
+  //--------------------------------
+  const area = baseFloat * heightFloat;
+  document.getElementById("parallelogram-area").innerText = area;
+  //------------------------------------
+  document.getElementById("parallelogram-base").value = "";
+  document.getElementById("parallelogram-height").value = "";
+}
