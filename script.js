@@ -22,8 +22,20 @@ function calculateTriangleArea() {
   //////////////////
   document.getElementById("triangle-base").value = "";
   document.getElementById("triangle-height").value = "";
-
 }
 
-
 //---------------------------------------------------------------------------
+function calculateRectangleArea() {
+  const recLenVal = document.getElementById("rectangle-length").value;
+  const recLen = parseFloat(recLenVal);
+  //----------------------------
+  const recWidVal = document.getElementById("rectangle-width").value;
+  const recWid = parseFloat(recWidVal);
+  //--------------------------------
+  const area = recLen * recWid;
+  const rectangleArea = document.getElementById("rectangle-area");
+  rectangleArea.innerText = area;
+  //----------------------------------
+  document.getElementById("rectangle-length").value = "";
+  document.getElementById("rectangle-width").value = "";
+}
