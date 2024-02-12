@@ -86,3 +86,17 @@ function calculatePentagonArea() {
   document.getElementById("pentagon-perimeter").value = "";
   document.getElementById("pentagon-apothem").value = "";
 }
+function calculateEllipseArea() {
+  const ellipseAxis1Value = document.getElementById("ellipse-axis-1").value;
+  const axis1Float = parseFloat(ellipseAxis1Value);
+  //-------------------------------------------------
+
+  const ellipseAxis2Value = document.getElementById("ellipse-axis-2").value;
+  const axis2Float = parseFloat(ellipseAxis2Value);
+  //-------------------------------------------------
+  const area = 3.1416 * axis1Float * axis2Float;
+  document.getElementById("ellipse-area").innerText = area;
+  //---------------------------------------
+  document.getElementById("ellipse-axis-1").value = "";
+  document.getElementById("ellipse-axis-2").value = "";
+}

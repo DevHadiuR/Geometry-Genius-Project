@@ -20,7 +20,7 @@
         <h1 class="text-4xl font-bold">Interactive</h1>
         <p class="text-3xl font-medium">Geometry Genius</p>
       </div>
-      <div class="">
+      <div class="hidden md:block">
         <button class="btn btn-primary w-32 font-bold text-white">Blog</button>
       </div>
     </header>
@@ -288,19 +288,38 @@
                 Ellipse
               </h2>
               <p class="mx-auto mb-2">Area (A) = πab</p>
-              <div class="font-medium mb-6 flex flex-row space-x-2">
-                <input class="bg-white w-20 pl-3 rounded-md type="text"
-                placeholder="a" />
-                <span>cm</span>
+              <div class="font-medium mb-3 flex flex-row space-x-2">
+                <!-- ----------------------------------- -->
                 <input
-                  class="bg-white w-20 pl-3 rounded-md"
+                  id="ellipse-axis-1"
+                  class="bg-white w-20 pl-5 rounded-md"
                   type="text"
-                  placeholder="b"
+                  placeholder="Axis"
+                />
+                <span>cm</span>
+                <!-- --------------------------------- -->
+                <input
+                  id="ellipse-axis-2"
+                  class="bg-white w-20 pl-5 rounded-md"
+                  type="text"
+                  placeholder="Axis"
                 />
                 <span>cm</span>
               </div>
+              <!-- ------------------------------------ -->
+              <div class="bg-white w-[55%] mx-auto rounded-md mb-3">
+                <p class="text-center text-xl font-semibold">
+                  <span id="ellipse-area">0</span><span>cm<sup>2</sup></span>
+                </p>
+              </div>
+              <!-- ------------------------------------ -->
               <div class="card-actions justify-center">
-                <button class="btn btn-primary w-full">Calculate</button>
+                <button
+                  onclick="calculateEllipseArea()"
+                  class="btn btn-primary w-full"
+                >
+                  Calculate
+                </button>
               </div>
             </div>
           </div>
