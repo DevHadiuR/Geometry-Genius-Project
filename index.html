@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light" l>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,7 +12,219 @@
     />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body>
+  <body class="m-5 lg:m-10">
+    <header
+      class="flex flex-col md:flex-row justify-between items-center bg-[#108fd83e] py-3 mb-10 rounded-xl px-6"
+    >
+      <div class="space-y-1">
+        <h1 class="text-4xl font-bold">Interactive</h1>
+        <p class="text-3xl font-medium">Geometry Genius</p>
+      </div>
+      <div class="">
+        <button class="btn btn-primary w-32 font-bold text-white">Blog</button>
+      </div>
+    </header>
+    <main>
+      <!-- main content container -->
+      <div class="flex flex-col lg:flex-row gap-4">
+        <!-- shaper cards -->
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 flex-1 gap-4"
+        >
+          <!-- Triangle Card 1-->
+          <div class="card shadow-xl items-center bg-[#FBBCEDED]">
+            <figure>
+              <img
+                class="p-3 lg:p-6"
+                src="./geometry-genius-resources/images/triangle.png"
+                alt="Shoes"
+              />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title font-bold text-2xl justify-center">
+                Triangle
+              </h2>
+              <p class="mx-auto mb-2">Area (A) = 0.5 x b x h</p>
+              <div class="font-medium mb-6 flex flex-row space-x-2">
+                <input class="bg-white w-20 pl-3 rounded-md type="text"
+                placeholder="b" />
+                <span>cm</span>
+                <input
+                  class="bg-white w-20 pl-3 rounded-md"
+                  type="text"
+                  placeholder="h"
+                />
+                <span>cm</span>
+              </div>
+              <div class="card-actions justify-center">
+                <button class="btn btn-primary w-full">Calculate</button>
+              </div>
+            </div>
+          </div>
+          <!-- Rectangle Card 2-->
+          <div class="card shadow-xl items-center bg-[#FFD9B3]">
+            <figure>
+              <img
+                class="p-3 lg:p-6"
+                src="./geometry-genius-resources/images/rectangle.png"
+                alt="Shoes"
+              />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title font-bold text-2xl justify-center">
+                Rectangle
+              </h2>
+              <p class="mx-auto mb-2">Area (A) = W x L</p>
+              <div class="font-medium mb-6 flex flex-row space-x-2">
+                <input class="bg-white w-20 pl-3 rounded-md type="text"
+                placeholder="w" />
+                <span>cm</span>
+                <input
+                  class="bg-white w-20 pl-3 rounded-md"
+                  type="text"
+                  placeholder="l"
+                />
+                <span>cm</span>
+              </div>
+              <div class="card-actions justify-center">
+                <button class="btn btn-primary w-full">Calculate</button>
+              </div>
+            </div>
+          </div>
+          <!-- Parallelogram Card 3-->
+          <div class="card shadow-xl items-center bg-[#C1FFC1]">
+            <figure>
+              <img
+                class="p-3 lg:p-6"
+                src="./geometry-genius-resources/images/parallelogram.png"
+                alt="Shoes"
+              />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title font-bold text-2xl justify-center">
+                Parallelogram
+              </h2>
+              <p class="mx-auto mb-2">Area (A) = b x h</p>
+              <div class="font-medium mb-6 flex flex-row space-x-2">
+                <input class="bg-white w-20 pl-3 rounded-md type="text"
+                placeholder="b" />
+                <span>cm</span>
+                <input
+                  class="bg-white w-20 pl-3 rounded-md"
+                  type="text"
+                  placeholder="h"
+                />
+                <span>cm</span>
+              </div>
+              <div class="card-actions justify-center">
+                <button class="btn btn-primary w-full">Calculate</button>
+              </div>
+            </div>
+          </div>
+          <!-- Rhombus Card 4-->
+          <div class="card shadow-xl items-center bg-[#69C7F0]">
+            <figure>
+              <img
+                class="p-3 lg:p-6"
+                src="./geometry-genius-resources/images/rhombus.png"
+                alt="Rhombus"
+              />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title font-bold text-2xl justify-center">
+                Rhombus
+              </h2>
+              <p class="mx-auto mb-2">
+                Area (A) = 0.5 x d<sub>1</sub>x d<sub>2</sub>
+              </p>
+              <div class="font-medium mb-6 flex flex-row space-x-2">
+                <input class="bg-white w-20 pl-3 rounded-md type="text"
+                placeholder="d" />
+                <span>cm</span>
+                <input
+                  class="bg-white w-20 pl-3 rounded-md"
+                  type="text"
+                  placeholder="d"
+                />
+                <span>cm</span>
+              </div>
+              <div class="card-actions justify-center">
+                <button class="btn btn-primary w-full">Calculate</button>
+              </div>
+            </div>
+          </div>
+          <!-- Pentagon Card 5-->
+          <div class="card shadow-xl items-center bg-[#ACFFFC]">
+            <figure>
+              <img
+                class="p-3 lg:p-6"
+                src="./geometry-genius-resources/images/pentagon.png"
+                alt="Pentagon"
+              />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title font-bold text-2xl justify-center">
+                Pentagon
+              </h2>
+              <p class="mx-auto mb-2">Area (A) = 0.5 x p x b</p>
+              <div class="font-medium mb-6 flex flex-row space-x-2">
+                <input class="bg-white w-20 pl-3 rounded-md type="text"
+                placeholder="p" />
+                <span>cm</span>
+                <input
+                  class="bg-white w-20 pl-3 rounded-md"
+                  type="text"
+                  placeholder="b"
+                />
+                <span>cm</span>
+              </div>
+              <div class="card-actions justify-center">
+                <button class="btn btn-primary w-full">Calculate</button>
+              </div>
+            </div>
+          </div>
+          <!-- Ellipse Card 6-->
+          <div class="card shadow-xl items-center bg-[#FFF9D9]">
+            <figure>
+              <img
+                class="p-3 lg:p-6"
+                src="./geometry-genius-resources/images/ellipse.png"
+                alt="Ellipse"
+              />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title font-bold text-2xl justify-center">
+                Ellipse
+              </h2>
+              <p class="mx-auto mb-2">Area (A) = πab</p>
+              <div class="font-medium mb-6 flex flex-row space-x-2">
+                <input class="bg-white w-20 pl-3 rounded-md type="text"
+                placeholder="a" />
+                <span>cm</span>
+                <input
+                  class="bg-white w-20 pl-3 rounded-md"
+                  type="text"
+                  placeholder="b"
+                />
+                <span>cm</span>
+              </div>
+              <div class="card-actions justify-center">
+                <button class="btn btn-primary w-full">Calculate</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- calculation conten -->
+        <div class="shadow-xl border-2 w-80 h-96 md:h-auto rounded-xl">
+          <h2
+            class="text-xl font-bold mt-6 flex justify-center border-b-2 border-black w-[70%] mx-auto"
+          >
+            Area Calculation
+          </h2>
+        </div>
+      </div>
+    </main>
+
     <script src="script.js"></script>
   </body>
 </html>
