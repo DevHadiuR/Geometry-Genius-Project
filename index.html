@@ -46,8 +46,12 @@
               </h2>
               <p class="mx-auto mb-2">Area (A) = 0.5 x b x h</p>
               <div class="font-medium mb-3 flex flex-row space-x-2">
-                <input id="triangle-base" class="bg-white w-20 pl-3 rounded-md
-                type="text" placeholder="Base"/>
+                <input
+                  id="triangle-base"
+                  class="bg-white w-20 pl-3 rounded-md"
+                  type="text"
+                  placeholder="Base"
+                />
                 <span>cm</span>
                 <input
                   id="triangle-height"
@@ -88,8 +92,12 @@
               <p class="mx-auto mb-2">Area (A) = W x L</p>
               <div class="font-medium mb-3 flex flex-row space-x-2">
                 <!-- -------------------------------- -->
-                <input id="rectangle-length" class="bg-white w-20 pl-3
-                rounded-md type="text" placeholder="Length" />
+                <input
+                  id="rectangle-length"
+                  class="bg-white w-20 pl-3 rounded-md"
+                  type="text"
+                  placeholder="Length"
+                />
                 <span>cm</span>
                 <!-- -------------------------- -->
                 <input
@@ -132,8 +140,12 @@
               <p class="mx-auto mb-2">Area (A) = b x h</p>
               <div class="font-medium mb-3 flex flex-row space-x-2">
                 <!-- ----------------------------------- -->
-                <input id="parallelogram-base" class="bg-white w-20 pl-3
-                rounded-md type="text" placeholder="Base" />
+                <input
+                  id="parallelogram-base"
+                  class="bg-white w-20 pl-3 rounded-md"
+                  type="text"
+                  placeholder="Base"
+                />
                 <span>cm</span>
                 <!-- ------------------------------------- -->
                 <input
@@ -178,19 +190,38 @@
               <p class="mx-auto mb-2">
                 Area (A) = 0.5 x d<sub>1</sub>x d<sub>2</sub>
               </p>
-              <div class="font-medium mb-6 flex flex-row space-x-2">
-                <input class="bg-white w-20 pl-3 rounded-md type="text"
-                placeholder="d" />
-                <span>cm</span>
+              <div class="font-medium mb-3 flex flex-row space-x-2">
+                <!-- ------------------------------------- -->
                 <input
-                  class="bg-white w-20 pl-3 rounded-md"
+                  id="rhombus-diagonal-1"
+                  class="bg-white w-20 rounded-md"
                   type="text"
-                  placeholder="d"
+                  placeholder="Diagonal-1"
+                />
+                <span>cm</span>
+                <!---------------------------------- -->
+                <input
+                  id="rhombus-diagonal-2"
+                  class="bg-white w-20 rounded-md"
+                  type="text"
+                  placeholder="Diagonal-2"
                 />
                 <span>cm</span>
               </div>
+              <!-- -------------------------------------- -->
+              <div class="bg-white w-[55%] mx-auto rounded-md mb-3">
+                <p class="text-center text-xl font-semibold">
+                  <span id="diagonal-area">0</span><span>cm<sup>2</sup></span>
+                </p>
+              </div>
+              <!-- ---------------------------------------- -->
               <div class="card-actions justify-center">
-                <button class="btn btn-primary w-full">Calculate</button>
+                <button
+                  onclick="calculateRhombusArea()"
+                  class="btn btn-primary w-full"
+                >
+                  Calculate
+                </button>
               </div>
             </div>
           </div>
@@ -208,19 +239,38 @@
                 Pentagon
               </h2>
               <p class="mx-auto mb-2">Area (A) = 0.5 x p x b</p>
-              <div class="font-medium mb-6 flex flex-row space-x-2">
-                <input class="bg-white w-20 pl-3 rounded-md type="text"
-                placeholder="p" />
-                <span>cm</span>
+              <div class="font-medium mb-3 flex flex-row space-x-2">
+                <!-- ------------------------------------------ -->
                 <input
-                  class="bg-white w-20 pl-3 rounded-md"
+                  id="pentagon-perimeter"
+                  class="bg-white w-20 pl-1 rounded-md"
                   type="text"
-                  placeholder="b"
+                  placeholder="Perimeter"
+                />
+                <span>cm</span>
+                <!-- --------------------------------------------- -->
+                <input
+                  id="pentagon-apothem"
+                  class="bg-white w-20 pl-1 rounded-md"
+                  type="text"
+                  placeholder="Apothem"
                 />
                 <span>cm</span>
               </div>
+              <!-- ----------------------------- -->
+              <div class="bg-white w-[55%] mx-auto rounded-md mb-3">
+                <p class="text-center text-xl font-semibold">
+                  <span id="pentagon-area">0</span><span>cm<sup>2</sup></span>
+                </p>
+              </div>
+              <!-- ----------------------------- -->
               <div class="card-actions justify-center">
-                <button class="btn btn-primary w-full">Calculate</button>
+                <button
+                  onclick="calculatePentagonArea()"
+                  class="btn btn-primary w-full"
+                >
+                  Calculate
+                </button>
               </div>
             </div>
           </div>

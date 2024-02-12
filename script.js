@@ -56,3 +56,33 @@ function calculateParallelogramArea() {
   document.getElementById("parallelogram-base").value = "";
   document.getElementById("parallelogram-height").value = "";
 }
+//--------------------------------------------------------------------------
+function calculateRhombusArea() {
+  const diagonal1Value = document.getElementById("rhombus-diagonal-1").value;
+  const diagonalFloat = parseFloat(diagonal1Value);
+  //-----------------------------------
+  const diagonal2Value = document.getElementById("rhombus-diagonal-2").value;
+  const diagona2Float = parseFloat(diagonal2Value);
+  //--------------------------------------
+  const area = 0.5 * diagonalFloat * diagona2Float;
+  document.getElementById("diagonal-area").innerText = area;
+  //----------------------------------------
+  document.getElementById("rhombus-diagonal-1").value = "";
+  document.getElementById("rhombus-diagonal-2").value = "";
+}
+// -------------------------------------------------------------------------
+function calculatePentagonArea() {
+  const pentagonParimeterValue =
+    document.getElementById("pentagon-perimeter").value;
+  const perimeterFloat = parseFloat(pentagonParimeterValue);
+  //---------------------------------------
+  const pentagonApothemValue =
+    document.getElementById("pentagon-apothem").value;
+  const apothemFloat = parseFloat(pentagonParimeterValue);
+  //---------------------------------------------
+  const area = 0.5 * perimeterFloat * apothemFloat;
+  document.getElementById("pentagon-area").innerText = area;
+  //--------------------------------------------
+  document.getElementById("pentagon-perimeter").value = "";
+  document.getElementById("pentagon-apothem").value = "";
+}
