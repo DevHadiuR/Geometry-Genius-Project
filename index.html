@@ -45,19 +45,30 @@
                 Triangle
               </h2>
               <p class="mx-auto mb-2">Area (A) = 0.5 x b x h</p>
-              <div class="font-medium mb-6 flex flex-row space-x-2">
-                <input class="bg-white w-20 pl-3 rounded-md type="text"
-                placeholder="b" />
+              <div class="font-medium mb-3 flex flex-row space-x-2">
+                <input id="triangle-base" class="bg-white w-20 pl-3 rounded-md
+                type="text" placeholder="Base"/>
                 <span>cm</span>
                 <input
+                  id="triangle-height"
                   class="bg-white w-20 pl-3 rounded-md"
                   type="text"
-                  placeholder="h"
+                  placeholder="Height"
                 />
                 <span>cm</span>
               </div>
+              <div class="bg-white w-[55%] mx-auto rounded-md mb-3">
+                <p class="text-center text-xl font-semibold">
+                  <span id="triangle-area"></span><span>cm<sup>2</sup></span>
+                </p>
+              </div>
               <div class="card-actions justify-center">
-                <button class="btn btn-primary w-full">Calculate</button>
+                <button
+                  onclick="calculateTriangleArea()"
+                  class="btn btn-primary w-full"
+                >
+                  Calculate
+                </button>
               </div>
             </div>
           </div>
@@ -77,12 +88,12 @@
               <p class="mx-auto mb-2">Area (A) = W x L</p>
               <div class="font-medium mb-6 flex flex-row space-x-2">
                 <input class="bg-white w-20 pl-3 rounded-md type="text"
-                placeholder="w" />
+                placeholder="Length" />
                 <span>cm</span>
                 <input
                   class="bg-white w-20 pl-3 rounded-md"
                   type="text"
-                  placeholder="l"
+                  placeholder="Width"
                 />
                 <span>cm</span>
               </div>
